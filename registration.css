@@ -75,14 +75,24 @@ div {
 
 /* INPUTS, SELECT, TEXTAREA */
 .form-group input,
-.form-group select,
 .form-group textarea {
   padding: 10px;
   border: 1px solid #9fa0a0;
   border-radius: 6px;
   font-size: 15px;
   background-color: rgba(255, 255, 255, 0.1);
-  color: #e7e1e1;
+  color: #ffffff;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.form-group select{
+  padding: 10px;
+  border: 1px solid #9fa0a0;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #000000;
   transition: 0.2s;
   width: 100%;
 }
@@ -136,3 +146,4 @@ div {
   background-color: #004aad;
   transform: scale(0.98);
 }
+
