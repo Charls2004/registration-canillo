@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* DARK BACKGROUND WITH SIMPLE GRADIENT */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #001233, #000814, #003566);
+  color: white;
+}
+
+/* FIELDSET AND LEGEND */
+fieldset {
+  border: 2px solid #005ce6;
+  border-radius: 8px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 92, 230, 0.4);
+}
+
+legend {
+  font-weight: bold;
+  font-size: 18px;
+  color: #00b4ff;
+  padding: 0 10px;
+}
+
+/* FORM CONTAINER */
+form {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 25px 30px;
+  box-shadow: 0 0 20px rgba(0, 128, 255, 0.3);
+  display: flex;
+  flex-direction: column;
+}
+
+/* FORM ROWS */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0 10px;
+}
+
+.form-row .form-group {
+  flex: 1;
+  min-width: 45%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.form-group label,
+.form-gender label,
+.form-language label,
+div {
+  color: #f1f1f1;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+/* INPUTS, SELECT, TEXTAREA */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #9fa0a0;
+  border-radius: 6px;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #e7e1e1;
+  transition: 0.2s;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  size-adjust: none;
+  border-color: #00b4ff;
+  box-shadow: 0 0 8px rgba(0, 180, 255, 0.4);
+  outline: none;
+}
+
+/* LANGUAGE & GENDER */
+
+.form-gender,
+.form-language {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.form-gender input,
+.form-language input {
+  margin: 10px;
+}
+
+/* BUTTON STYLE */
+.form-group button {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0 15px rgba(0, 180, 255, 0.4);
+}
+
+.form-group button:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transform: scale(1.03);
+}
+
+.form-group button:active {
+  background-color: #004aad;
+  transform: scale(0.98);
+}

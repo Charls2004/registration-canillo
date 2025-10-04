@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANILLO - Registration Form</title>
+
+    <link rel="stylesheet" href="registration.css">
+
+  </head>
+  <body>
+    
+    <div >
+      <form id="registrationForm"  onsubmit="submitData(event)">
+        <fieldset>
+          
+          <legend>CANILLO - Registration Form</legend>
+          <div class="final">   
+              <div class="form-row"> 
+                <div class="form-group">
+                  <label for="Firstname">Firstname</label>
+                  <input type="text" 
+                    name="Firstname" 
+                    id="Firstname" 
+                    placeholder="First Name" 
+                    required>
+                </div>
+
+                <div class="form-group"> 
+                  <label for="Lastname">Lastname</label>
+                  <input type="text" 
+                    name="Lastname" 
+                    id="Lastname" 
+                    placeholder="Last Name" 
+                    required>
+                </div>
+              </div>
+              
+              <div class="form-group">
+                <label for="Username">Username</label>
+                <input type="text" 
+                  name="Username" 
+                  id="Username" 
+                  placeholder="Username" 
+                  required>
+              </div>
+
+              <div class="form-row">
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" 
+                  name="Password" 
+                  id="Password" 
+                  placeholder="Password" 
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="Con-password">Confirm Password</label>
+                <input type="password" 
+                  name="Con-password" 
+                  id="Con-password" 
+                  placeholder="Confirm Password" 
+                  required>
+              </div>
+              </div>
+
+              <div class="form-group">
+                <label for="Email">Email</label>
+                <input type="email" 
+                  name="Email" 
+                  id="Email"
+                  placeholder="Ex. Canillo@dnsc.edu.ph"
+                  required
+                  >
+              </div>
+              
+              <div class="form-group">
+                <label for="Number">Mobile Number</label>
+                <input type="tel" 
+                  name="Number" 
+                  id="Number"
+                  oninput="this.value = this.value.replace(/[^0-9]/g, '');"
+                  placeholder="Mobile Number"
+                  maxlength="11">
+              </div>
+
+              <div class="form-row">
+              <div class="form-gender">
+                <div>
+                  <label for=""> Gender:</label>
+                  <label for="Male">Male</label>
+                  <input type="radio" 
+                    name="gender" 
+                    id="Male"
+                    value="Male"
+                    >
+                    <label for="Female">Female</label>
+                  <input type="radio" 
+                    name="gender" 
+                    id="Female"
+                    value="Female"
+                    >
+                </div>
+              </div>
+                
+              <div class="form-group">
+                <div>
+                  <label for="religion">Religion:</label>
+                  <select name="religion" id="religion">
+                    <option value=""></option>
+                    <option value="Roman Catholic">Roman Catholic</option>
+                    <option value="Muslim">Muslim</option>
+                    <option value="Eglisia ni Christo">Eglisia ni Christo</option>
+                  </select>
+                </div>
+              </div>
+              </div>
+
+              <div class="form-language">
+                <div>
+                  <label for="language">Language Spoken:</label><br>
+                  <div class="language">
+                    <input type="checkbox" 
+                      name="cebuano" 
+                      id="cebuano" 
+                      > 
+                    <label for="cebuano">Cebuano</label>
+                    
+                    <input type="checkbox" 
+                      name="tagalog" 
+                      id="tagalog" 
+                      >
+                    <label for="tagalog">Tagalog</label> 
+                    
+                    <input type="checkbox" 
+                      name="english" 
+                      id="english" 
+                      >
+                    <label for="english">English</label>
+                    
+                    <input type="checkbox" 
+                      name="other" 
+                      id="other" 
+                      > 
+                    <label for="other">Other</label>
+                  </div required>
+                </div>
+              </div>
+
+
+              
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea name="address" 
+                  id="address" 
+                  cols="15" 
+                  rows="5" 
+                  placeholder="Your Address Here..."></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="birthday">Birthday</label>
+                <input type="date" 
+                  name="birthday" 
+                  id="Birthday">
+              </div>
+
+              <div class="form-group">
+                <label for="file">Resume</label>
+                <input type="file" 
+                name="file" 
+                id="file">
+              </div>
+
+              <label><input type="checkbox" id="agree"> I agree to the Data Privacy Policy</label><br><br>
+
+
+              <div class="form-group">
+                <button type="submit">Submit</button>
+              </div>
+
+            
+              
+          </div>
+        </form>
+      </div>
+    </fieldset>
+
+  </body>
+<script src="registration.js">
+
+</script>
+</html>
